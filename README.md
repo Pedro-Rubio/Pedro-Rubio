@@ -51,9 +51,9 @@ Apasionado por transformar datos complejos en soluciones inteligentes que genere
 ## 📫 Cómo contactarme
 
 - www.linkedin.com/in/srdelosdatos
-- +541122503588
+  
 - ✉ rubio-pedro@hotmail.com
-- 
+  
 
 ---
 
