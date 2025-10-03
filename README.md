@@ -1,7 +1,9 @@
 # 👋 ¡Hola! Soy Pedro Rubio
 
 [![Data Analyst](https://img.shields.io/badge/Data%20Analyst-Blueviolet?style=for-the-badge&logo=powerbi)](https://www.linkedin.com/in/srdelosdatos)  
+
 **Analista de Datos | Data Scientist en Formación**  
+
 📍 **Buenos Aires, Argentina**  
 
 ¡Transformo datos crudos en **decisiones accionables** que impulsan negocios! Me apasiona la **analítica orientada a resultados**, con foco en **HR Analytics**, **detección de fraude** y **optimización operativa**. Diseño dashboards intuitivos, construyo ETL eficientes y desarrollo modelos predictivos simples pero impactantes – siempre priorizando el **valor para el negocio** sobre la complejidad técnica.  
