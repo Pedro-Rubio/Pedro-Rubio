@@ -6,13 +6,14 @@
 
 ¡Transformo datos crudos en **decisiones accionables** que impulsan negocios! Me apasiona la **analítica orientada a resultados**, con foco en **HR Analytics**, **detección de fraude** y **optimización operativa**. Diseño dashboards intuitivos, construyo ETL eficientes y desarrollo modelos predictivos simples pero impactantes – siempre priorizando el **valor para el negocio** sobre la complejidad técnica.  
 
-Actualmente, finalizo mi bootcamp en **Data Analysis (Henry, julio 2025)** y mi **Ingeniería Industrial (UTN, diciembre 2024)**. Mi mantra: **Claridad > Complejidad | Automatización > Manualidad | Impacto > Métricas vacías**.  
+Mi mantra: **Claridad > Complejidad | Automatización > Manualidad | Impacto > Métricas vacías**.  
 
-> ✨ **Superpoder**: Entender el negocio primero, los algoritmos después. ¡Hagamos que tus datos cuenten historias que vendan!  
+> ✨ **Diferencial**: Entender el negocio primero, los algoritmos después. ¡Hagamos que tus datos cuenten historias que vendan!  
 
 ---
 
 ## 🔍 **¿Qué hago (y por qué brilla)?**  
+
 - **Dashboards ejecutivos**: Creo visualizaciones en Power BI/Tableau que la gerencia no solo entiende, sino que *usa diariamente* para tomar decisiones.  
 - **Pipelines ETL robustos**: Automatizo limpieza y transformación con Python/SQL, asegurando reproducibilidad y escalabilidad.  
 - **Modelos predictivos prácticos**: Abordo problemas reales como rotación de personal, scoring de fraude o ausentismo – con énfasis en interpretabilidad (SHAP) y métricas business-friendly (PR-AUC, F1, costo de errores).  
@@ -39,32 +40,51 @@ Actualmente, finalizo mi bootcamp en **Data Analysis (Henry, julio 2025)** y mi 
 
 ---
 
-## 🚀 **Proyectos Destacados**  
+## 🚀 **Proyectos Destacados** 
+
 Aquí van mis creaciones más impactantes – todos con datos sintéticos/anonimizados para respetar NDAs y privacidad. ¡Clona, corre y experimenta!  
 
-### 1. **Detección de Fraude en Transacciones QR** *(MVP en Desarrollo – Mi Estrella Actual)*  
-   - **Desafío**: Reducir falsos positivos en pagos digitales sin sacrificar detección de fraudes reales (dataset sintético de 10k transacciones).  
-   - **Lo que construí**: ETL completo (Python/SQL), feature engineering (geolocalización, patrones temporales, comportamiento usuario), modelo con scikit-learn (Random Forest + threshold tuning), y app Streamlit para triage por riesgo (ALTO/REVISAR/OK). Dashboard Power BI con KPIs en tiempo real.  
-   - **Impacto**: +10 pts en PR-AUC, -25% en FPR vs. baseline; prioriza revisiones por "expected loss" (prob × monto).  
-   - 🔗 **[Notebook ETL & Modelado](https://github.com/Pedro-Rubio/Proyecto_Fraude/blob/main/Proyecto_Data_Fraude_Depurado.ipynb)** | **[Demo Streamlit](https://streamlit.io/cloud?app=tu-app-url-aqui)** | **[Dashboard Power BI](https://app.powerbi.com/view?r=eyJrIjoi...")**  
-   - 🏆 **Por qué mirarlo**: End-to-end desde data messy a deploy – ideal para fintech.  
+### 1) Detección de Fraude en Transacciones **QR** *(MVP en desarrollo — mi estrella actual)*
+- **Desafío:** reducir **falsos positivos** en pagos digitales sin perder capacidad de detección (≈10k transacciones sintéticas).
+- **Qué construí:** **ETL** completo (Python/SQL), **feature engineering** (patrones temporales, **señales geográficas agregadas**, comportamiento usuario/comercio), modelo **scikit-learn** (Random Forest + **threshold tuning**), **app Streamlit** para triage (ALTO/REVISAR/OK) y **dashboard Power BI** con KPIs operativos.
+- **Impacto (rangos):** **+5 a +12 pts PR-AUC** vs baseline; **–15% a –35% FPR**; priorización de revisiones por **expected loss** (*prob* × *monto*).
+- 🔗 **Notebook ETL & Modelado:** _link_ • **Demo Streamlit:** _link_ • **Dashboard Power BI:** _link_
+- **Por qué mirarlo:** pipeline **end-to-end** (de data messy a decisiones), ideal para fintech/operaciones.
 
-### 2. **Predicción de Rotación en RR.HH.** *(Inspirado en mi Experiencia en Hard Rock Cafe)*  
-   - **Desafío**: Predecir abandonos voluntarios para reducir costos de contratación (dataset sintético de 5k empleados).  
-   - **Lo que construí**: EDA con pandas, segmentación (área/antigüedad), regresión logística + SHAP para explicabilidad, y recomendaciones accionables (e.g., alertas tempranas).  
-   - **Impacto**: Identificó factores clave (salario equity, carga laboral) con F1-score 0.82; simulación: -15% rotación en alto riesgo.  
-   - 🔗 **[Notebook Completo](https://github.com/Pedro-Rubio/HR-Rotacion-Analysis – agrega si lo subes!)**  
-   - 🏆 **Por qué mirarlo**: Mezcla HR domain knowledge con ML simple – transferable a scoring de candidatos.  
+### 2) Detección de Fraude en **Tarjetas de Crédito** *(prototipo reproducible)*
+- **Desafío:** detectar transacciones fraudulentas en **clase desbalanceada** con costos operativos diferenciados.
+- **Qué construí:** **EDA y ETL** (limpieza, reglas de negocio), **features** de monto/velocidad/merchant/horario, modelos **Logistic Regression / XGBoost** con **calibración** y evaluación por **PR-AUC, ROC-AUC, F1**, además de **curvas costo-beneficio**; **Power BI** para FPR/FNR por segmento y cola de casos.
+- **Impacto (rangos):** **+6 a +10 pts PR-AUC** vs baseline; **recall** mantenido con **FPR** acotado mediante **thresholds por segmento**.
+- 🔗 **Notebook (tabular + métricas):** _link_ • **Dashboard (KPIs/segmentos):** _link_
+- **Por qué mirarlo:** muestra **trade-offs** reales (precision/recall) y cómo **operativizar** un scoring en revisión manual limitada (**precision@k**).
 
-### 3. **Bonus: Expansión Pharma (Biogenesis)** *(Analytics Estratégico)*  
-   - Análisis de datos epidemiológicos (12M rows) para priorizar mercados LATAM post-COVID. ETL en Power Query, dashboards con DAX.  
-   - 🔗 **[Repo](https://github.com/Pedro-Rubio/Biogenesis)**  
+### 3) Analítica de **RR.HH.** — Predicción de Rotación *(basado en experiencia real)*
+- **Desafío:** identificar factores de abandono voluntario y dar **visibilidad ejecutiva** (rotación, ausentismo, costo).
+- **Qué construí:** **modelo de datos + ETL** (Excel/SQL), **dashboards Power BI (DAX)** con **drill-down** por área/sucursal, y **regresión logística + SHAP** para explicabilidad y priorización de retención.
+- **Impacto (demo):** **F1 ≈0.80–0.84** en datos sintéticos; set de **KPIs estandarizados** y frecuencia de reporte **mensual/semanal**.
+- 🔗 **Notebook completo:** _link_ • **PBIX (demo):** _link_
+- **Por qué mirarlo:** combina **conocimiento de dominio** en HR con ML **interpret-able** y tableros accionables.
+
+### 4) **Expansión Pharma (Biogenesis)** — Analytics Estratégico *(bonus)*
+- **Desafío:** priorizar mercados LATAM post-COVID con datos epidemiológicos (≈12M filas).
+- **Qué construí:** **Power Query/Power BI** para ETL, **DAX** para KPIs y segmentación por país/línea; storytelling con mapas y tendencias.
+- 🔗 **Repo:** _link_
+- **Por qué mirarlo:** caso de **inteligencia de mercado** con alto volumen y foco en **decisión ejecutiva**.
+
+---
+
+### ✍️ Nota rápida sobre reproducibilidad
+- Repos con **notebooks explicados paso a paso**, **scripts de ETL** y estructura clara (`/data`, `/notebooks`, `/src`, `/powerbi`, `/docs`).
+- Evaluación con **PR-AUC/ROC-AUC, F1, FPR/FNR, precision@k** y **threshold tuning** guiado por **costo-beneficio**.
+- Demos públicas **sin PII** y métricas **en rangos** (NDA).
+
 
 > 📌 **Explora más**: Todos los repos incluyen notebooks comentados paso a paso, requirements.txt y data quality checks. ¡Forkea y contribuye!  
 
 ---
 
 ## 📂 **Qué Encontrarás en Mis Repos**  
+
 - **Notebooks narrativos**: No solo código – explico *por qué* cada paso, con visuals y business context.  
 - **Dashboards interactivos**: Embeddables, con drill-downs y alertas.  
 - **Scripts ETL**: Reproducibles, versionados con Git, listos para prod.  
@@ -80,8 +100,7 @@ Estoy abierto a freelances en fraude/HR analytics, mentorship o coffee chats vir
 
 - 🔗 **LinkedIn**: [linkedin.com/in/srdelosdatos](https://www.linkedin.com/in/srdelosdatos)  
 - 📧 **Email**: [rubio-pedro@hotmail.com](mailto:rubio-pedro@hotmail.com)  
-- 🌐 **Portfolio Web**: [En Construcción – Próximamente en Notion/GitHub Pages](https://pedro-rubio.notion.site)  
-- 🐦 **X/Twitter**: [@srdelosdatos](https://x.com/srdelosdatos) *(Agrega si lo tienes!)*  
+ 
 
 > _“Los datos no hablan solos. Mi trabajo es darles voz, claridad y propósito – para que tu negocio gane.”_ – Pedro Rubio  
 
