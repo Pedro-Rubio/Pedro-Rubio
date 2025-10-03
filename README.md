@@ -31,7 +31,7 @@ Mi mantra: **Claridad > Complejidad | Automatización > Manualidad | Impacto > M
 |-----------|---------------------------|-------|
 | **Lenguajes** | Python, SQL, R (básico) | 🟢 Avanzado |
 | **Análisis & ML** | pandas, NumPy, scikit-learn, seaborn, matplotlib | 🟢 Avanzado |
-| **Visualización** | Power BI (DAX), Tableau, Excel Avanzado | 🟢 Experto |
+| **Visualización** | Power BI (DAX), Tableau, Excel Avanzado | 🟢 Avanzado |
 | **ETL & Automatización** | Python Scripts, Git, GitHub Actions (básico) | 🟡 Intermedio |
 | **Plataformas** | Microsoft Fabric, Databricks (en aprendizaje) | 🟡 Intermedio |
 | **Cloud** | Azure (S3, SageMaker explorando), AWS basics | 🟡 Principiante |
@@ -48,27 +48,27 @@ Aquí van mis creaciones más impactantes – todos con datos sintéticos/anonim
 - **Desafío:** reducir **falsos positivos** en pagos digitales sin perder capacidad de detección (≈10k transacciones sintéticas).
 - **Qué construí:** **ETL** completo (Python/SQL), **feature engineering** (patrones temporales, **señales geográficas agregadas**, comportamiento usuario/comercio), modelo **scikit-learn** (Random Forest + **threshold tuning**), **app Streamlit** para triage (ALTO/REVISAR/OK) y **dashboard Power BI** con KPIs operativos.
 - **Impacto (rangos):** **+5 a +12 pts PR-AUC** vs baseline; **–15% a –35% FPR**; priorización de revisiones por **expected loss** (*prob* × *monto*).
-- 🔗 **Notebook ETL & Modelado:** _link_ • **Demo Streamlit:** _link_ • **Dashboard Power BI:** _link_
+  
 - **Por qué mirarlo:** pipeline **end-to-end** (de data messy a decisiones), ideal para fintech/operaciones.
 
 ### 2) Detección de Fraude en **Tarjetas de Crédito** *(prototipo reproducible)*
 - **Desafío:** detectar transacciones fraudulentas en **clase desbalanceada** con costos operativos diferenciados.
 - **Qué construí:** **EDA y ETL** (limpieza, reglas de negocio), **features** de monto/velocidad/merchant/horario, modelos **Logistic Regression / XGBoost** con **calibración** y evaluación por **PR-AUC, ROC-AUC, F1**, además de **curvas costo-beneficio**; **Power BI** para FPR/FNR por segmento y cola de casos.
 - **Impacto (rangos):** **+6 a +10 pts PR-AUC** vs baseline; **recall** mantenido con **FPR** acotado mediante **thresholds por segmento**.
-- 🔗 **Notebook (tabular + métricas):** _link_ • **Dashboard (KPIs/segmentos):** _link_
+  
 - **Por qué mirarlo:** muestra **trade-offs** reales (precision/recall) y cómo **operativizar** un scoring en revisión manual limitada (**precision@k**).
 
 ### 3) Analítica de **RR.HH.** — Predicción de Rotación *(basado en experiencia real)*
 - **Desafío:** identificar factores de abandono voluntario y dar **visibilidad ejecutiva** (rotación, ausentismo, costo).
 - **Qué construí:** **modelo de datos + ETL** (Excel/SQL), **dashboards Power BI (DAX)** con **drill-down** por área/sucursal, y **regresión logística + SHAP** para explicabilidad y priorización de retención.
 - **Impacto (demo):** **F1 ≈0.80–0.84** en datos sintéticos; set de **KPIs estandarizados** y frecuencia de reporte **mensual/semanal**.
-- 🔗 **Notebook completo:** _link_ • **PBIX (demo):** _link_
+  
 - **Por qué mirarlo:** combina **conocimiento de dominio** en HR con ML **interpret-able** y tableros accionables.
 
 ### 4) **Expansión Pharma (Biogenesis)** — Analytics Estratégico *(bonus)*
 - **Desafío:** priorizar mercados LATAM post-COVID con datos epidemiológicos (≈12M filas).
 - **Qué construí:** **Power Query/Power BI** para ETL, **DAX** para KPIs y segmentación por país/línea; storytelling con mapas y tendencias.
-- 🔗 **Repo:** _link_
+  
 - **Por qué mirarlo:** caso de **inteligencia de mercado** con alto volumen y foco en **decisión ejecutiva**.
 
 ---
@@ -91,7 +91,7 @@ Aquí van mis creaciones más impactantes – todos con datos sintéticos/anonim
 - **Proyectos de aprendizaje**: De Henry, Kaggle challenges y freelance – siempre con foco en impacto medible.  
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Pedro-Rubio&show_icons=true&theme=radical)  
-*(Agrega tu token para stats reales – opcional para más engagement!)*  
+
 
 ---
 
